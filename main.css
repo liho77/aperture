@@ -1,0 +1,174 @@
+:root {
+    --black: #000000;
+    --light-black: #181818;
+    --white: #FFFFFF;
+    --border-btn: 14px;
+    --white-text: #C0C0C0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    font: inherit;
+    color: inherit;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+header {
+    background-color: var(--light-black);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+
+header .header-content {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1248px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header .header-links nav a {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+header .header-links nav a:hover {
+    text-decoration: underline;
+}
+
+header .header-links p {
+    margin-right: 56px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+header .header-links nav button {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 14px;
+    padding: 9px 20px 13px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    transition: all .3s ease-in-out;
+}
+
+header .header-links nav button:hover {
+    background-color: #333;
+    color: #FFFFFF;
+}
+
+header .header-links nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+header .header-links {
+    display: flex;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    position: relative;
+}
+
+section .sub-title {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C0C0C0;
+    margin-bottom: 1px;
+}
+
+section h1 {
+    color: #FFF;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 59.4px;
+    margin-bottom: 18px;
+}
+
+section p {
+    color: #C0C0C0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 200; /*мне кажется фигма неправильно посчитала, в макете буквы тоньше*/
+    line-height: 20px;
+}
+
+#mainscreen {
+    background: url("img/main_screen.png") no-repeat center center;
+    background-size: cover;
+    height: 90vh;
+    padding-top: 90px;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    padding-bottom: 70px;
+}
+
+#mainscreen .mainscreen-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+#mainscreen .icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+#mainscreen .icons .icon {
+    display: flex;
+    gap: 6px;
+    align-items: flex-start;
+}
+
+#mainscreen .icons .icon span {
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 12px;
+
+}
+
+
+
+
